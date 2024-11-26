@@ -73,12 +73,12 @@
 
     /* Code snipplet Identifier */
     --sh-class: #4c97f8;
-    --sh-identifier: white;
-    --sh-keyword: rgb(161, 137, 137);
-    --sh-string: rgb(192, 47, 47);
+    --sh-identifier: rgb(86, 86, 167);
+    --sh-keyword: blue;
+    --sh-string: rgb(175, 85, 85);
     --sh-entity: rgb(192, 47, 47);
-    --sh-sign: rgb(192, 47, 47);
-    --sh-comment: rgb(192, 47, 47);
+    --sh-sign: rgb(121, 117, 187);
+    --sh-comment: rgb(231, 216, 216);
     --sh-property: rgb(192, 47, 47);
     --sh-jsxliterals: rgb(192, 47, 47);
   }
@@ -95,7 +95,7 @@
     @apply font-serif text-3xl font-bold underline decoration-border/75 decoration-2 underline-offset-8
   }
   .prose pre {
-    @apply overflow-x-auto rounded-lg bg-accent px-5 py-4 text-sm
+    @apply overflow-x-auto rounded-lg bg-black dark:bg-accent px-5 py-4 text-sm
   }
   .prose code {
     @apply rounded-lg px-1 py-0.5 text-sm

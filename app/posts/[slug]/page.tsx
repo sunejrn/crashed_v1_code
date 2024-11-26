@@ -27,7 +27,6 @@ export default async function Post({ params}: {params: { slug: string }}) {
     const { metadata, content } = post
     const { title, image, author, publishedAt } = metadata;
 
-
   return (
     <section className='pb-24 pt-32'>
         <div className='container max-w-3xl'>
@@ -40,9 +39,10 @@ export default async function Post({ params}: {params: { slug: string }}) {
             </Link>
 
             { image && (
-                <div className='relative mb-6 h-96 w-full overflow-hidden rounded-lg'>
+                <div className='relative mb-6 h-80 w-full overflow-hidden rounded-lg'>
                     <Image
                         src={image}
+                        priority
                         alt={title || ""}
                         className='object-cover'
                         fill
@@ -57,7 +57,7 @@ export default async function Post({ params}: {params: { slug: string }}) {
                 </p>
             </header>
 
-            <main className='prose mt-16 dark:prose-invert'>
+            <main className='prose  mt-16 dark:prose-invert'>
                 <MDXContent source={content} />
             </main>
         </div>
