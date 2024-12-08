@@ -17,7 +17,8 @@ export default function Projects({ projects }: { projects: ProjectMetadata[] }) 
                                     alt={project.title || ""}
                                     fill
                                     priority
-                                    className="rounded-lg object-cover object-center transition "
+                                    sizes="100vw"
+                                    className="rounded-lg object-cover object-center transition"
                                 />
                             </div>
                         )}

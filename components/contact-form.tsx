@@ -55,7 +55,8 @@ export default function ContactForm() {
         >
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
             {/* name  */}
-            <div className="mt-6">
+            <div className="mt-4">
+              <label className="text-sm font-bold mb-4" htmlFor="name">Name:</label>
               <Input
                 className="py-6"
                 id="name"
@@ -73,7 +74,8 @@ export default function ContactForm() {
             </div>
 
             {/* email  */}
-            <div className="mt-6">
+            <div className="mt-4">
+            <label className="text-sm font-bold mb-4" htmlFor="name">Email:</label>
               <Input
                 className="py-6"
                 id="email"
@@ -92,6 +94,7 @@ export default function ContactForm() {
 
             {/* message  */}
             <div className="sm:col-span-2 mt-3">
+              <label className="text-sm font-bold mb-4" htmlFor="name">Message:</label>
               <Textarea
               rows={4}
                 placeholder="Message"
@@ -112,7 +115,7 @@ export default function ContactForm() {
               disabled={isSubmitting}
               className="w-full disabled:opacity-50"
             >
-              { isSubmitting ? "Processing..." : "Contact Us"}
+              { isSubmitting ? "Processing..." : "Send"}
             </Button>
           </div>
           <p className="mt-4 text-xs text-muted-foreground">

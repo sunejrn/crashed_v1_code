@@ -43,7 +43,8 @@ export default async function Project({ params}: {params: { slug: string }}) {
                         src={image}
                         alt={title || ""}
                         className='object-cover'
-                        fill
+                        layout='fill'
+                        sizes="(max-width: 600px)100vw, 50vw"
                     />
                 </div>
             )}

@@ -1,36 +1,43 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Hi there 👋
 
-## Getting Started
+This is an exploration zone, a space for continuous experimentation and learning, somethings are broken or half baked.
 
-First, run the development server:
+> Explore tech articles at [afrodev.space][3]
+### 
+> Explore My Blockchain Hacks & Novel Projects at [AfroLabs][5]
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Interest includes but not limited to
+- Recommendation System, 
+- Test-driven development (TDD),
+- AI Integration and Frontend Systems,
+- Web socket, WebRTC & and everything real-time
+- Web animations,
+- improving client side developer experience. 
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Side stuffs and indie hacks
+- [Startuplist Africa](https://startuplist.africa): Unlock the Potential of African Startups with Startuplist Africa
+- [Web3bot](https://web3bot-ui.web.app): A super non-custodial wallet integration for blockchain discord communities
+- [PeerPlay](https://peerplay.space): Watch videos with others in different locations at real time synchronously
+- [SendUsdc](https://sendusdc.surge.sh): Implemented Gasless token transfer using EIP-3009 on Goerli testnet
+- [AnniBo](https://annibo.onrender.com/): Take Your Content Creation to the Next Level with GPT-3
+- [QRStudio](https://qr-verse-studio.vercel.app/): Generate QR codes easily and customizable
+- [Dalle-gen](https://github.com/johnexzy/Dalle-gen): Bring Your Ideas to Life with Dall-e engine directly from discord
+- [Afrodev.space](https://afrodev.space): The Code Chronicles: Explore Practical Software Development Stories
+- [Tokenpass](https://github.com/johnexzy/tokenpass-contract): Get Paid for Your Content with Token-Gated Access
+- [Trx Watcher](https://github.com/AfroLabsInc/trx-watcher/): A smart monitoring system ensuring you're always up-to-date on your wallet transactions
+- [MachoMara](https://github.com/AfroLabsInc/marascan-contract): MachoMara is a blockchain-based donation platform enhancing wildlife preservation through secure, transparent transactions and bridging Africa's technological gap with USSD and M-Pesa integration.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📬 Get in touch
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- LinkedIn: [linkedin.com/in/johnoba/][1]
+- Twitter: [twitter.com/_afrodev][2]
+- E-mail: [obajohn75@gmail.com]
+- Writes at : [Afrodev][3]
+<br/>
+<p align="left"> <img src="https://komarev.com/ghpvc/?username=johnexzy&label=Profile%20views&color=0e75b6&style=flat" alt="johnexzy" /> </p>
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+[1]: https://www.linkedin.com/in/johnoba/
+[2]: https://twitter.com/intent/follow?screen_name=_afrodev
+[3]: https://afrodev.space
+[4]: https://annibo.up.railway.app/
+[5]: https://github.com/AfroLabsInc

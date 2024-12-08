@@ -32,12 +32,12 @@ export default function Intro() {
         <>
             <section className="flex md:flex-row flex-col-reverse items-start gap-x-10 gap-y-10 pb-24 pt-3">
                 <div className="flex-1 ">
-                    <h1 className="title no-underline">Hey, I&#39;m Kara Sune</h1>
+                    <h1 className="title no-underline">👋, I&#39;m Kara Sune</h1>
 
                     <p className="mt-3 font-light text-muted-foreground">
-                        I&#39;m a Software Engineer based in Port Harcourt, Nigeria. I'm passionate about learning learning new technolgies and others
+                        I&#39;m a Software Engineer based in Port Harcourt, Nigeria. I'm passionate about learning new technolgies and others
                     </p>
-                    <hr className="mt-4 w-40 mx-auto" />
+                    <hr className="mt-4 w-40 flex md:items-end lg:justify-center lg:mx-auto" />
                     <div className="flex gap-3 mt-4">
                         {navigation.map(item => (
                             <a
@@ -81,16 +81,16 @@ export default function Intro() {
                         </div>
 
                         {/* Now the Dialog Pop-Up is here */}
-                        <DialogContent className="mx-auto roboto">
-                            <DialogHeader>
-                                <DialogTitle>Kara Sune</DialogTitle>
-                                <DialogDescription>
-                                I'm a Software Engineer based in Port Harcourt, Nigeria. I'm passionate about learning learning new technolgies and others.
+                        <DialogContent className="mx-auto roboto flex lg:justify-between p-14 rounded-md">
+                            <DialogHeader className="flex flex-col justify-center items-center">
+                                <DialogTitle className="text-left">Kara Sune</DialogTitle>
+                                <DialogDescription className="flex flex-col justify-start items-start">
+                                I&#39;m a Software Engineer based in Port Harcourt, Nigeria. I&#39;m passionate about learning learning new technolgies and others.
                                 </DialogDescription>
                             </DialogHeader>
                             <div className="grid place-content-center py-4">
                                 <Image
-                                    className="flex-1 rounded-full"
+                                    className="flex-1 hidden lg:block rounded-md"
                                     src={authorKaraImage}
                                     alt="Kara Sunebari"
                                     width={175}
