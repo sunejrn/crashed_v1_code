@@ -31,7 +31,7 @@ export default function Intro() {
     return (
         <>
             <section className="flex md:flex-row flex-col-reverse items-start gap-x-10 gap-y-10 pb-24 pt-3">
-                <div className="flex-1 ">
+                <div className="flex-1">
                     <h1 className="title no-underline">👋, I&#39;m Kara Sune</h1>
 
                     <p className="mt-3 font-light text-muted-foreground">
