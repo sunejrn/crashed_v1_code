@@ -1,93 +1,25 @@
 ---
-title: Difference Between == and === in JavaScript
-summary: Knowing the Difference Between == and === in JavaScript
-image: /Images/posts/first-blog-posts.png
+title: Doing is Better Than Reading or Watching, My Journey in Web Development
+summary: In this blog post, I highlight the importance of hands-on experience in web development, sharing how building projects and practical application accelerated my learning and career growth.
+image: /Images/posts/first-blog-posts.png 
 author: 'Kara sune'
-publishedAt: '2024-11-25'
+publishedAt: '2024-08-20'
 ---
 
-When working with JavaScript, you'll often encounter two types of equality operators: `==` (double equals) and `===` (triple equals). While they may seem similar, they have important differences that can affect how your code behaves. In this blog post, we'll explore the key distinctions between these two operators and when to use each one.
 
-## The Double Equals (==) Operator
+## Doing is Better Than Reading or Watching
 
-The `==` operator is known as the equality operator. It compares two values for equality after converting both values to a common type. This process is known as type coercion.
+I got my first laptop when I started web development back in 2022. It had been a long time coming, as I had only known the struggles of learning on an old Intel Go HP desktop, which was painfully slow and had poor networking capabilities. I’m incredibly grateful to my dad for getting me the laptop, which enabled me to dive into web development with HTML, CSS, JavaScript.
 
-### Example:
+Starting from scratch was pretty amazing. I thoroughly enjoyed learning HTML, CSS, and JavaScript, guided by one of the best web development teachers, [Dave Gray](https://courses.davegray.codes). The dev community was also incredibly supportive.
 
-```javascript
-console.log(5 == '5'); // true
-```
+The core message I want to share is that doing is better than reading or watching. After my initial learning phase, I built numerous projects based on the knowledge I gained from Dave Gray. His coaching was invaluable, and it took me a bit longer to master programming and markup languages like HTML, CSS, and JavaScript.
 
-In this example, the string `5` is converted to the number 5 before the comparison, so the result is true
+I built several projects, but I often found myself stuck in the planning phase. I would imagine what to build, visualize its appearance and functionality, but never take the next step to start the actual work. This cycle of overthinking and inaction led to many unfinished projects. Eventually, I sought recommendations and guidance from experts who helped me focus on doing rather than just reading or watching.
 
-## Pros and Cons
+By July 2022, I began working on JavaScript projects, which significantly improved my skills as a developer. I learned that progress, not perfection, should be our goal. Understanding the fundamentals pays off in any field, whether technical or non-technical.
 
-### Pros:
+I'm excited to share the projects I built during that time. It’s important to remember that hands-on experience is invaluable. Doing is indeed better than reading or watching.
 
-- Useful when you want to compare values regardless of their types.
+Thanks for reading, and I wish you a great day! Cheers 🥂
 
-### Cons:
-
-- Can lead to unexpected results due to type coercion.
-- Less predictable and can introduce bugs if not used carefully.
-
-## The Triple Equals (===) Operator
-
-The `===` operator is known as the strict equality operator. It compares two values for equality without converting their types. If the values are of different types, the comparison returns `false`.
-
-### Example:
-
-```javascript
-console.log(5 === '5'); // false
-```
-
-In this example, no type conversion occurs, so the number 5 is not equal to the string `'5'`, resulting in `false`.
-
-## Pros and Cons
-
-### Pros:
-
-- More predictable and reliable because it does not perform type coercion.
-- Helps prevent bugs related to unexpected type conversions.
-
-### Cons:
-
-- Requires more explicit type management in your code.
-
-# When to Use Each Operator
-
-- Use `==` when you need to compare values with different types and you are confident that type coercion will not introduce bugs. This is rare and generally not recommended.
-
-- Use `===` when you want a more reliable and predictable comparison. This is the preferred approach in most cases to avoid potential pitfalls of type coercion.
-
-# Examples in Practice
-
-### Using ==:
-
-```javascript
-let a = 0;
-let b = false;
-console.log(a == b); // true
-```
-
-In this case, `0` is converted to `false` before the comparison, so the result is `true`.
-
-## Using ===:
-
-```javascript
-let a = 0;
-let b = false;
-console.log(a === b); // false
-```
-
-Here, `0` is not equal to `false` because they are of different types, resulting in `false`.
-
-## Overall
-
-Understanding the difference between `==` and `===` is crucial for writing robust and bug-free JavaScript code. While `==` can be useful in certain scenarios, it's generally safer and more predictable to use `===`. By using the strict equality operator, you can avoid unexpected results caused by type coercion and ensure your comparisons behave as intended.
-
-### Thanks for reading 
-
-
-
-<Counter />

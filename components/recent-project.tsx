@@ -16,7 +16,7 @@ export default async function RecentProjects() {
                 href={"/projects"}
                 className="mt-8 inline-flex items-center gap-2 text-muted-foreground"
             >
-                <span className="hover:text-blue-500">View All Projects</span>
+                <span className="hover:text-blue-200 text-sm bg-gray-300 dark:bg-black dark:border transform transition-all text-gray-700 dark:text-gray-200 hover:bg-black hover:dark:bg-white dark:hover:text-black w-32 py-3 rounded-full flex justify-center cursor-pointer items-center">View All Projects</span>
             </Link>
         </div>
     </section>

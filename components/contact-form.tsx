@@ -1,131 +1,47 @@
 "use client"
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion"
 
-import { z } from "zod"
-import { Input } from "@/components/ui/input"
-import { Button } from "@/components/ui/button"
-import { sendEmail } from "@/lib/actions"
-import { ContactFormSchema } from "@/lib/schemas"
-import { SubmitHandler, useForm } from "react-hook-form"
-import { zodResolver } from "@hookform/resolvers/zod"
-import Link from "next/link"
-import { Textarea } from "@/components/ui/textarea"
-import { toast } from "sonner"
-
-type Inputs = z.infer<typeof ContactFormSchema>
-
-// Update the form
 export default function ContactForm() {
 
-  const {
-    register,
-    handleSubmit,
-    reset,
-    formState: { errors, isSubmitting }
-  } = useForm<Inputs>({
-    resolver: zodResolver(ContactFormSchema),
-    defaultValues: {
-      name: "",
-      email: "",
-      message: ""
-    }
-  })
-
-  const processForm: SubmitHandler<Inputs> = async data => {
-    const result = await sendEmail(data)
-
-    if (result?.error) {
-      toast.error("Error occurred, Please try again.")
-      return
-    }
-
-    toast.success("Message sent successfully!")
-    reset()
-  }
-
   return (
-    <section className="relative isolate">
-      {/* background pattern */}
+    <section className="roboto">
+      <h1 className="text-xl font-bold mt-16">Contact Me</h1>
 
-      {/* form  */}
-      <div className="relative">
-        <form 
-        onSubmit={handleSubmit(processForm)}
-        className="mt-16 lg:flex-auto"
-        noValidate
-        >
-          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
-            {/* name  */}
-            <div className="mt-4">
-              <label className="text-sm font-bold mb-4" htmlFor="name">Name:</label>
-              <Input
-                className="py-6"
-                id="name"
-                type="text"
-                placeholder="Name"
-                autoComplete="off"
-                {...register("name")}
-              />
 
-              { errors.name?.message && (
-                <p className="ml-1 mt-2 text-sm text-rose-400">
-                  { errors.name.message}
-                </p>
-              )}
-            </div>
 
-            {/* email  */}
-            <div className="mt-4">
-            <label className="text-sm font-bold mb-4" htmlFor="name">Email:</label>
-              <Input
-                className="py-6"
-                id="email"
-                type="email"
-                placeholder="Email"
-                autoComplete="off"
-                {...register("email")}
-              />
 
-              { errors.email?.message && (
-                <p className="ml-1 mt-2 text-sm text-rose-400">
-                  { errors.email.message}
-                </p>
-              )}
-            </div>
+      {/* <div className="mt-5 bg-gray-300 dark:bg-gray-950 transform transition-all text-gray-700 dark:text-gray-200 hover:bg-black hover:dark:bg-white hover:text-gray-200 dark:hover:text-black w-36 py-4 rounded-full flex justify-center cursor-pointer items-center">
+        View all
+        </div> */}
 
-            {/* message  */}
-            <div className="sm:col-span-2 mt-3">
-              <label className="text-sm font-bold mb-4" htmlFor="name">Message:</label>
-              <Textarea
-              rows={4}
-                placeholder="Message"
-                {...register("message")}
-              />
 
-              { errors.message?.message && (
-                <p className="ml-1 mt-2 text-sm text-rose-400">
-                  { errors.message.message}
-                </p>
-              )}
-            </div>
-          </div>
-
-          <div className="mt-6">
-            <Button
-              type="submit"
-              disabled={isSubmitting}
-              className="w-full disabled:opacity-50"
-            >
-              { isSubmitting ? "Processing..." : "Send"}
-            </Button>
-          </div>
-          <p className="mt-4 text-xs text-muted-foreground">
-            By submitting this form, I agree to the {""}
-            <Link href={"/privacy"} className="font-bold">
-              privacy&nbsp;policy.
-            </Link>
-          </p>
-        </form>
-      </div>
+      <h2 className="text-xl font-bold mt-16">FAQ</h2>
+      <Accordion type="single" collapsible className="w-full">
+        <AccordionItem value="item-1">
+          <AccordionTrigger>Is it accessible?</AccordionTrigger>
+          <AccordionContent>
+            Yes. It adheres to the WAI-ARIA design pattern.
+          </AccordionContent>
+        </AccordionItem>
+        <AccordionItem value="item-2">
+          <AccordionTrigger>Is it styled?</AccordionTrigger>
+          <AccordionContent>
+            Yes. It comes with default styles that matches the other
+            components&apos; aesthetic.
+          </AccordionContent>
+        </AccordionItem>
+        <AccordionItem value="item-3">
+          <AccordionTrigger>Is it animated?</AccordionTrigger>
+          <AccordionContent>
+            Yes. It's animated by default, but you can disable it if you prefer.
+          </AccordionContent>
+        </AccordionItem>
+      </Accordion>
     </section>
   )
 }

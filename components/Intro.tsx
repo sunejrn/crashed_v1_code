@@ -35,9 +35,17 @@ export default function Intro() {
                     <h1 className="title no-underline">👋, I&#39;m Kara Sune</h1>
 
                     <p className="mt-3 font-light text-muted-foreground">
-                        I&#39;m a Software Engineer based in Port Harcourt, Nigeria. I'm passionate about learning new technolgies and others
+                        I&#39;m a FullStack Developer | React | JavaScript | NodeJs | NextJs | Tailwindcss | TypeScript | MongoDB | SQL
                     </p>
-                    <hr className="mt-4 w-40 flex md:items-end lg:justify-center lg:mx-auto" />
+                    <h3 className="mt-6 text-lg font-bold">Achievements</h3>
+                    {/* <section>
+                        <FaJsSquare className="text-3xl"/>
+                    </section> */}
+
+                    <div className="mt-5 text-sm bg-gray-300 dark:bg-gray-950 transform transition-all text-gray-700 dark:text-gray-200 hover:bg-black hover:dark:bg-white hover:text-gray-200 dark:hover:text-black w-28 py-3 rounded-full flex justify-center cursor-pointer items-center">
+                        View all
+                    </div>
+
                     <div className="flex gap-3 mt-4">
                         {navigation.map(item => (
                             <a
@@ -55,51 +63,51 @@ export default function Intro() {
                 </div>
 
                 {/* For the Image */}
-                    <Dialog>
-                        <div className="relative">
-                            <DialogTrigger asChild>
-                                <Image
-                                    className="flex-1 rounded-full grayscale hover:grayscale-0"
-                                    src={authorKaraImage}
-                                    alt="Kara Sunebari"
-                                    width={175}
-                                    height={175}
-                                    priority
-                                />
-                            </DialogTrigger>
-                            <span className="absolute bottom-2 right-4 bg-gray-400 dark:bg-gray-900 p-2 rounded-full text-white">
-                                <HoverCard>
-                                    <HoverCardTrigger asChild>
-                                        <FaRocket />
-                                    </HoverCardTrigger>
-                                    <HoverCardContent className="w-24 text-sm">
-                                        Avaliable
-                                    </HoverCardContent>
-                                </HoverCard>
-                                
-                            </span>
-                        </div>
+                <Dialog>
+                    <div className="relative">
+                        <DialogTrigger asChild>
+                            <Image
+                                className="flex-1 rounded-full grayscale hover:grayscale-0"
+                                src={authorKaraImage}
+                                alt="Kara Sunebari"
+                                width={175}
+                                height={175}
+                                priority={true}
+                            />
+                        </DialogTrigger>
+                        <span className="absolute bottom-2 right-4 bg-gray-400 dark:bg-gray-900 p-2 rounded-full text-white">
+                            <HoverCard>
+                                <HoverCardTrigger asChild>
+                                    <FaRocket />
+                                </HoverCardTrigger>
+                                <HoverCardContent className="w-24 text-sm">
+                                    Avaliable
+                                </HoverCardContent>
+                            </HoverCard>
 
-                        {/* Now the Dialog Pop-Up is here */}
-                        <DialogContent className="mx-auto roboto flex lg:justify-between p-14 rounded-md">
-                            <DialogHeader className="flex flex-col justify-center items-center">
-                                <DialogTitle className="text-left">Kara Sune</DialogTitle>
-                                <DialogDescription className="flex flex-col justify-start items-start">
+                        </span>
+                    </div>
+
+                    {/* Now the Dialog Pop-Up is here */}
+                    <DialogContent className="mx-auto roboto flex lg:justify-between p-14 rounded-md">
+                        <DialogHeader className="flex flex-col justify-center items-center">
+                            <DialogTitle className="text-left">Kara Sune</DialogTitle>
+                            <DialogDescription className="flex flex-col justify-start items-start">
                                 I&#39;m a Software Engineer based in Port Harcourt, Nigeria. I&#39;m passionate about learning learning new technolgies and others.
-                                </DialogDescription>
-                            </DialogHeader>
-                            <div className="grid place-content-center py-4">
-                                <Image
-                                    className="flex-1 hidden lg:block rounded-md"
-                                    src={authorKaraImage}
-                                    alt="Kara Sunebari"
-                                    width={175}
-                                    height={175}
-                                    priority
-                                />
-                            </div>
-                        </DialogContent>
-                    </Dialog>
+                            </DialogDescription>
+                        </DialogHeader>
+                        <div className="grid place-content-center py-4">
+                            <Image
+                                className="flex-1 hidden lg:block rounded-md"
+                                src={authorKaraImage}
+                                alt="Kara Sunebari"
+                                width={175}
+                                height={175}
+                                priority
+                            />
+                        </div>
+                    </DialogContent>
+                </Dialog>
             </section>
         </>
     )

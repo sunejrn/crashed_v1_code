@@ -36,7 +36,7 @@ export default async function Post({ params}: {params: { slug: string }}) {
             >
                 <FaArrowLeft className='h-4 w-5'/>
                 <span>Back to posts</span>
-            </Link>
+            </Link> 
 
             { image && (
                 <div className='relative mb-6 h-80 w-full overflow-hidden rounded-lg'>
