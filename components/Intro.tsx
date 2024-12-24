@@ -1,8 +1,8 @@
 import Image from "next/image"
-import authorKaraImage from "@/public/Images/authors/20240811_135908.jpg"
+import authorKaraImage from "@/public/Images/authors/profile.jpg"
 import { JSX, SVGProps } from 'react'
 import Achievement from "./achievement"
-import { FaGithub, FaLinkedinIn, FaRocket } from 'react-icons/fa'
+import { FaGithub, FaLinkedinIn, FaCrosshairs } from 'react-icons/fa'
 import { Dialog, DialogContent, DialogDescription, DialogTitle, DialogTrigger, DialogHeader } from "@/components/ui/dialog"
 import {
     HoverCard,
@@ -73,10 +73,10 @@ export default function Intro() {
                                 priority={true}
                             />
                         </DialogTrigger>
-                        <span className="absolute bottom-2 right-4 bg-gray-400 dark:bg-gray-900 p-2 rounded-full text-white">
+                        <span className="absolute bottom-1 right-1 bg-blue-400 dark:bg-gray-900 p-2 rounded-full text-white">
                             <HoverCard>
                                 <HoverCardTrigger asChild>
-                                    <FaRocket />
+                                    <FaCrosshairs />
                                 </HoverCardTrigger>
                                 <HoverCardContent className="w-24 text-sm">
                                     Avaliable

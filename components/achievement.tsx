@@ -12,7 +12,7 @@ const achievements: Achievement[] = [
         title: 'Certified React Developer',
         description: 'Completed the official React certification course with a score of 80%',
         date: 'May 2024',
-        icon: <FaTrophy className='h-6 w-6 text-yellow-500' />,
+        icon: <FaTrophy className='h-6 w-6 text-blue-500' />,
     }
 ]
 
@@ -27,7 +27,7 @@ const achievement: React.FC = () => {
                         <div key={index} className='bg-gray-300 dark:bg-black w-96 p-4 rounded-lg shadow-md'>
                             <div className='flex gap-2 items-center'>
                                 {achievement.icon}
-                                <h3 className='text-md font-semibold text-black dark:text-white'>{achievement.title}</h3>
+                                <h3 className='text-md text-black dark:text-white'>{achievement.title}</h3>
                             </div>
                             <p className='mt-2 text-sm dark:text-gray-400 text-gray-600 '>{achievement.description}</p>
                             <span className='mt-4 flex underline justify-end items-end text-sm text-gray-500'>{achievement.date}</span>

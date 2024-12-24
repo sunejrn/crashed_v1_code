@@ -132,3 +132,10 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
+
+.ImageBackround {
+  background-color: blueviolet;
+  background-image: url("../../portfolio/public/Images/projects/Typing-game.jpg");
+  background-size: cover;
+  background-position: center;
+}

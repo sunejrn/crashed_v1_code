@@ -1,4 +1,6 @@
 "use client"
+
+import ProfileCard from "./profile-card"
 import {
   Accordion,
   AccordionContent,
@@ -10,15 +12,15 @@ export default function ContactForm() {
 
   return (
     <section className="roboto">
-      <h1 className="text-xl font-bold mt-16">Contact Me</h1>
+      <h1 className="text-xl font-bold mt-14 mb-3">Contact Me</h1>
 
-
-
-
-      {/* <div className="mt-5 bg-gray-300 dark:bg-gray-950 transform transition-all text-gray-700 dark:text-gray-200 hover:bg-black hover:dark:bg-white hover:text-gray-200 dark:hover:text-black w-36 py-4 rounded-full flex justify-center cursor-pointer items-center">
-        View all
-        </div> */}
-
+      <ProfileCard
+        name="Kara Sune"
+        bio="I&#39;m a FullStack Developer | React | JavaScript | NodeJs | Tailwindcss | NextJs | TypeScript | MongoDB | SQL"
+        email="Karasune66@gmail.com"
+        linkedin="linkedin"
+        github="https://github.com/gitKarasune"
+      />
 
       <h2 className="text-xl font-bold mt-16">FAQ</h2>
       <Accordion type="single" collapsible className="w-full">
