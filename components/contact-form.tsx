@@ -18,7 +18,7 @@ export default function ContactForm() {
         name="Kara Sune"
         bio="I&#39;m a FullStack Developer | React | JavaScript | NodeJs | Tailwindcss | NextJs | TypeScript | MongoDB | SQL"
         email="Karasune66@gmail.com"
-        linkedin="linkedin"
+        linkedin="https://www.linkedin.com/in/sune-kara"
         github="https://github.com/gitKarasune"
       />
 

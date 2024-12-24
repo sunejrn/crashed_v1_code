@@ -139,3 +139,12 @@
   background-size: cover;
   background-position: center;
 }
+
+.RocketProile {
+  position: absolute;
+  top: -14px;
+  left: 400px;
+  border: 1px dashed green;
+  padding: 4px;
+  border-radius: 50%;
+}
