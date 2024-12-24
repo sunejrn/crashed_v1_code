@@ -1,6 +1,7 @@
 import Image from "next/image"
 import authorKaraImage from "@/public/Images/authors/20240811_135908.jpg"
 import { JSX, SVGProps } from 'react'
+import Achievement from "./achievement"
 import { FaGithub, FaLinkedinIn, FaRocket } from 'react-icons/fa'
 import { Dialog, DialogContent, DialogDescription, DialogTitle, DialogTrigger, DialogHeader } from "@/components/ui/dialog"
 import {
@@ -35,18 +36,15 @@ export default function Intro() {
                     <h1 className="title no-underline">👋, I&#39;m Kara Sune</h1>
 
                     <p className="mt-3 font-light text-muted-foreground">
-                        I&#39;m a FullStack Developer | React | JavaScript | NodeJs | NextJs | Tailwindcss | TypeScript | MongoDB | SQL
+                        I&#39;m a FullStack Developer | React | JavaScript | NodeJs | Tailwindcss | NextJs | TypeScript | MongoDB | SQL
                     </p>
-                    <h3 className="mt-6 text-lg font-bold">Achievements</h3>
-                    {/* <section>
-                        <FaJsSquare className="text-3xl"/>
-                    </section> */}
+                    <Achievement/>
 
-                    <div className="mt-5 text-sm bg-gray-300 dark:bg-gray-950 transform transition-all text-gray-700 dark:text-gray-200 hover:bg-black hover:dark:bg-white hover:text-gray-200 dark:hover:text-black w-28 py-3 rounded-full flex justify-center cursor-pointer items-center">
+                    <div className="mt-2 text-sm bg-gray-300 dark:bg-gray-950 transform transition-all text-gray-700 dark:text-gray-200 hover:bg-black hover:dark:bg-white hover:text-gray-200 dark:hover:text-black w-28 py-3 rounded-full flex justify-center cursor-pointer items-center">
                         View all
                     </div>
 
-                    <div className="flex gap-3 mt-4">
+                    <div className="flex gap-3 mt-6">
                         {navigation.map(item => (
                             <a
                                 key={item.name}
