@@ -87,7 +87,7 @@ const ProfileCard: React.FC<ProfileCardPros> = ({ name, bio, email, linkedin, gi
                 </div>
             </div>
 
-            <div className='p-4 relative'>
+            <div className="p-4 relative">
                 <h2 className='text-2xl font-semibold text-gray-800 dark:text-gray-100 flex items-center gap-1'>{name} <FaCheckCircle className='text-sm text-blue-500 dark:text-green-500' /></h2>
                 <p className='text-gray-600 text-sm mt-2 dark:text-gray-300'>{bio}</p>
                 <div className='mt-4'>
