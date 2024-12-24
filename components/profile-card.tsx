@@ -110,7 +110,7 @@ const ProfileCard: React.FC<ProfileCardPros> = ({ name, bio, email, linkedin, gi
 
             <div className='p-4 relative'>
                 <FaRocket className='RocketProile text-gray-500 text-3xl dark:text-blue-900 z-50' />
-                <h2 className='text-2xl font-semibold text-gray-800 dark:text-gray-100 flex items-center gap-1'>{name} <FaCheckCircle className='text-sm text-blue-500 dark:text-green-500' /></h2>
+                <h2 className='text-2xl font-semibold text-gray-800 dark:text-gray-100 flex items-center gap-1'>{name} <FaCheckCircle className='text-sm text-blue-500 dark:text-green-500'/></h2>
                 <p className='text-gray-600 text-sm mt-2 dark:text-gray-300'>{bio}</p>
                 <div className='mt-4'>
                     <a href={`mailto:${email}`} className='text-gray-600 dark:text-gray-400 hover:dark:text-blue-600 hover:text-blue-600 hover:underline flex items-center'><FaEnvelope className='mr-2 text-blue-600' size={24} />{email}</a>
