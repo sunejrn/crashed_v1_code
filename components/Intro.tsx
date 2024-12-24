@@ -33,16 +33,12 @@ export default function Intro() {
         <>
             <section className="flex md:flex-row flex-col-reverse items-start gap-x-10 gap-y-10 pb-24 pt-3">
                 <div className="flex-1">
-                    <h1 className="title no-underline">👋, I&#39;m Kara Sune</h1>
+                    <h1 className="title no-underline">Hello, I&#39;m Kara Sune</h1>
 
                     <p className="mt-3 font-light text-muted-foreground">
                         I&#39;m a FullStack Developer | React | JavaScript | NodeJs | Tailwindcss | NextJs | TypeScript | MongoDB | SQL
                     </p>
                     <Achievement/>
-
-                    <div className="mt-2 text-sm bg-gray-300 dark:bg-gray-950 transform transition-all text-gray-700 dark:text-gray-200 hover:bg-black hover:dark:bg-white hover:text-gray-200 dark:hover:text-black w-28 py-3 rounded-full flex justify-center cursor-pointer items-center">
-                        View all
-                    </div>
 
                     <div className="flex gap-3 mt-6">
                         {navigation.map(item => (
