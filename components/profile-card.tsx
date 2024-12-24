@@ -66,27 +66,6 @@ const ProfileCard: React.FC<ProfileCardPros> = ({ name, bio, email, linkedin, gi
                 </div>
             )}
 
-            {/* Fullscreen Cover model */}
-            {/* {isFullscreen && (
-                <div className='fixed top-0 left-0 w-full h-full bg-black bg-opacity-75 flex justify-center items-center z-50' onClick={handleCloseFullscreen}>
-                <div className='relative'>
-                <Image
-                className='rounded-lg'
-                src={coverPicture}
-                alt='profile'
-                width={800}
-                height={800}
-                objectFit='cover'
-                priority={true}
-                />
-                <button className='absolute top-4 right-4 text-white text-3xl' onClick={handleCloseFullscreen}
-                >
-                &times;
-                </button>
-                </div>
-                </div>
-                )} */}
-
             {/* Profile card */}
             <div className='relative h-40 p-4 ImageBackround cursor-pointer' onClick={() => handleOpenFullscreen("/Images/projects/Typing-game.jpg")}>
                 <div className='flex justify-end relative h-full'>
