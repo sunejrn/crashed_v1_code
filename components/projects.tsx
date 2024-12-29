@@ -1,6 +1,6 @@
 import Link from "next/link"
 import Image from "next/image"
-
+ 
 import { ProjectMetadata } from "@/lib/project"
 import { formatDate } from "@/lib/utils"
 
@@ -18,7 +18,7 @@ export default function Projects({ projects }: { projects: ProjectMetadata[] }) 
                                     fill
                                     priority
                                     sizes="100vw"
-                                    className="rounded-lg object-cover object-center transition"
+                                    className="rounded-2xl object-cover object-center transition"
                                 />
                             </div>
                         )}

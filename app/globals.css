@@ -6,6 +6,10 @@
   font-family: Arial, Helvetica, sans-serif;
 } */
 
+.kendev {
+  font-family:cursive;
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -45,6 +49,7 @@
     --sh-property: rgb(192, 47, 47);
     --sh-jsxliterals: rgb(192, 47, 47);
   }
+
   .dark {
     --background: 0 0% 3.9%;
     --foreground: 0 0% 98%;
@@ -88,21 +93,27 @@
   * {
     @apply border-border;
   }
+
   body {
     @apply bg-background text-foreground;
   }
+
   .title {
     @apply font-serif text-3xl font-bold underline decoration-border/75 decoration-2 underline-offset-8
   }
+
   .prose pre {
     @apply overflow-x-auto rounded-lg bg-black dark:bg-accent px-5 py-4 text-sm
   }
+
   .prose code {
     @apply rounded-lg px-1 py-0.5 text-sm
   }
+
   .prose pre code {
     @apply p-0 leading-3;
   }
+
   .prose pre span {
     @apply font-medium
   }
@@ -114,7 +125,7 @@
 }
 
 /* Scrollbar effects and the styles */
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   width: 8px;
 }
 
@@ -138,4 +149,63 @@
   background-image: url("../../portfolio/public/Images/projects/Typing-game.jpg");
   background-size: cover;
   background-position: center;
+}
+
+
+#Js {
+  color: #f7df1e;
+}
+
+#Tailwindcss {
+  color: #0e778a;
+}
+
+#typescript {
+  color: #0167aa;
+}
+
+#React {
+  color: #317e94;
+}
+
+#Nextjs {
+  color: #000000;
+}
+
+#Express {
+  color: #000000;
+}
+
+#Nodejs {
+  color: #2b922b;
+}
+
+#Mongodb {
+  color: #47a248;
+}
+
+#Postgresql {
+  color: #336791;
+}
+
+#Jquery {
+  color: #034f85;
+}
+
+#Html {
+  color: #cc4019;
+}
+
+#css {
+  color: #0b5c96;
+}
+
+/* Profile Dark-Page at Profile-Card.tsx */
+.dark .profile-dark {
+  background-color: rgb(14, 10, 10);
+}
+
+/* Intro.tsx */
+.dark .Building-Solutions {
+  background-color: rgb(37, 27, 27);
 }

@@ -38,13 +38,13 @@ export default async function Project({ params}: {params: { slug: string }}) {
             </Link>
 
             { image && (
-                <div className='relative mb-6 h-80 w-full overflow-hidden rounded-lg'>
+                <div className='relative mb-6 h-80 w-full overflow-hidden'>
                     <Image
                         src={image}
                         alt={title || ""}
-                        className='object-cover'
+                        className='object-cover rounded-2xl'
                         layout='fill'
-                        sizes="(max-width: 600px)100vw, 50vw"
+                        // sizes="(max-width: 600px)100vw, 50vw"
                     />
                 </div>
             )}

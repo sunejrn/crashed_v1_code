@@ -8,7 +8,7 @@ export default function Header() {
 
             {/* Whatever to place here matters alot */}
             <div>
-                <Link href={"/"} className="text-lg italic">
+                <Link href={"/"} className="text-lg kendev">
                     Kendev
                 </Link>
             </div>

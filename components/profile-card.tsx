@@ -1,19 +1,15 @@
 import React, { useEffect, useState } from 'react'
-import { FaEnvelope, FaLinkedinIn, FaGithub, FaCheckCircle, FaRocket } from 'react-icons/fa'
+import { FaEnvelope, FaLinkedinIn, FaGithub, FaCheckCircle } from 'react-icons/fa'
 
 import Image from 'next/image';
-// import profile from "@/public/Images/authors/profile.jpg"
-// import coverPicture from "@/public/Images/projects/Typing-game.jpg"
-
 interface ProfileCardPros {
     name: string;
-    bio: string;
     email: string;
     linkedin: string;
     github: string;
 }
 
-const ProfileCard: React.FC<ProfileCardPros> = ({ name, bio, email, linkedin, github }) => {
+const ProfileCard: React.FC<ProfileCardPros> = ({ name, email, linkedin, github }) => {
 
     const [isFullscreen, setIsFullscreen] = useState<{ isOpen: boolean, image: string | null }>({
         isOpen: false,
@@ -44,7 +40,7 @@ const ProfileCard: React.FC<ProfileCardPros> = ({ name, bio, email, linkedin, gi
     }
 
     return (
-        <div className='max-w-xl max-auto bg-white dark:bg-stone-900 shadow-lg rounded-2xl overflow-hidden'>
+        <div className='max-w-xl max-auto bg-white dark:shadow-xl profile-dark shadow-lg rounded-2xl overflow-hidden'>
             {/* Fullscreen model */}
             {isFullscreen.isOpen && (
                 <div className='fixed top-0 left-0 w-full h-full bg-black bg-opacity-75 flex justify-center items-center z-50' onClick={handleCloseFullscreen}>
@@ -72,7 +68,7 @@ const ProfileCard: React.FC<ProfileCardPros> = ({ name, bio, email, linkedin, gi
                     {/* Profile Image */}
                     <div className='absolute bottom-0 right-0'>
                         <Image
-                            className='rounded-full border-2 border-white'
+                            className='rounded-2xl border-2 border-white'
                             src="/Images/authors/profile.jpg"
                             alt='profile'
                             width={100}
@@ -88,16 +84,17 @@ const ProfileCard: React.FC<ProfileCardPros> = ({ name, bio, email, linkedin, gi
             </div>
 
             <div className="p-4 relative">
-                <h2 className='text-2xl font-semibold text-gray-800 dark:text-gray-100 flex items-center gap-1'>{name} <FaCheckCircle className='text-sm text-blue-500 dark:text-green-500' /></h2>
-                <p className='text-gray-600 text-sm mt-2 dark:text-gray-300'>{bio}</p>
-                <div className='mt-4'>
-                    <a href={`mailto:${email}`} className='text-gray-600 dark:text-gray-400 hover:dark:text-blue-600 hover:text-blue-600 hover:underline flex items-center'><FaEnvelope className='mr-2 text-blue-600' size={24} />{email}</a>
-                </div>
-                <div className=' mt-3'>
-                    <a href={linkedin} target='_blank' className='text-gray-600 dark:text-gray-400 hover:dark:text-blue-600 hover:text-blue-600 flex hover:underline'><FaLinkedinIn className='mr-2 text-blue-600' size={24} />in/sune-kara</a>
-                </div>
-                <div className=' mt-3'>
-                    <a href={github} target='_blank' className='text-gray-600 dark:text-gray-400 hover:dark:text-blue-600 hover:text-blue-600 flex hover:underline'><FaGithub className='mr-2 text-blue-600' size={24} />gitKarasune</a>
+                <h2 className='text-2xl font-semibold text-gray-800 dark:text-gray-100 flex items-center gap-1'>{name} <FaCheckCircle className='text-xs text-blue-500 dark:text-green-500' /></h2>
+                <div className='grid mt-5 gap-2 grid-cols-2'>
+                    <div className='mt-3 transition-all hover:rotate-2 bg-gray-300 dark:bg-gray-900 py-4 px-4 rounded-full '>
+                        <a href={`mailto:${email}`} className='text-gray-600 text-sm dark:text-gray-400 hover:dark:text-blue-600 hover:text-blue-600 hover:underline flex items-center'><FaEnvelope className='mr-2 text-blue-600' size={18} />Kendev@gmail</a>
+                    </div>
+                    <div className=' mt-3 transition-all hover:rotate-2 bg-gray-300 dark:bg-gray-900 py-4 px-4 rounded-full '>
+                        <a href={linkedin} target='_blank' className='text-gray-600 text-sm dark:text-gray-400 hover:dark:text-blue-600 hover:text-blue-600 flex hover:underline items-center'><FaLinkedinIn className='mr-2 text-blue-600' size={18} />in/sune-kara</a>
+                    </div>
+                    <div className=' mt-3 transition-all hover:rotate-2 bg-gray-300 dark:bg-gray-900 py-4 px-4 rounded-full '>
+                        <a href={github} target='_blank' className='text-gray-600 text-sm dark:text-gray-400 hover:dark:text-blue-600 hover:text-blue-600 items-center flex hover:underline'><FaGithub className='mr-2 text-blue-600' size={18} />gitKarasune</a>
+                    </div>
                 </div>
             </div>
         </div>
