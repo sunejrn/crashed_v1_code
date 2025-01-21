@@ -21,7 +21,7 @@ interface PostProps {
 }
 
 export default async function Post({ params }: PostProps) {
-  const { slug } = params;
+  const { slug } = await params;
   const post = await getPostBySlug(slug);
 
   if (!post) {
