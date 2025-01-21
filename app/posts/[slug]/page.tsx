@@ -8,8 +8,8 @@ import { formatDate } from '@/lib/utils';
 import MDXContent from '@/components/mdx-content';
 
 export async function generateStaticParams() {
-    const posts = await getPosts()
-    const slugs = posts.map(post => ({ slug: post.slug }))
+    const posts = await getPosts();
+    const slugs = posts.map((post) => ({ slug: post.slug }))
 
     return slugs;
 }
