@@ -1,8 +1,8 @@
 import Image from "next/image"
 import authorKaraImage from "@/public/Images/authors/profile.jpg"
 import { JSX, SVGProps } from 'react'
-import { FaGithub, FaLinkedinIn, FaHeart } from 'react-icons/fa'
-import { SiNodedotjs, SiJavascript, SiReact, SiTypescript, SiNextdotjs, SiExpress, SiTailwindcss, SiCss3, SiHtml5, SiJquery } from 'react-icons/si';
+import { FaGithub, FaLinkedinIn, FaHeart, FaDatabase, FaRobot } from 'react-icons/fa'
+import { SiNodedotjs, SiJavascript, SiReact, SiTypescript,  SiNextdotjs, SiExpress, SiTailwindcss, SiCss3, SiHtml5, SiJquery, SiDocker, SiJest } from 'react-icons/si';
 import { Dialog, DialogContent, DialogDescription, DialogTitle, DialogTrigger, DialogHeader } from "@/components/ui/dialog"
 import {
     HoverCard,
@@ -36,10 +36,29 @@ export default function Intro() {
                     <h1 className="title no-underline"> Kara Sune</h1>
                     <p className="font-ligh text-sm text-gray-400 dark:text-gray-700">@_kendev</p>
                     {/* I&#39;m a  */}
- 
-                    <p className="mt-3 mb-4 text-muted-foreground roboto">
-                        A FullStack Developer | React | JavaScript | NodeJs/Express | Tailwindcss | NextJs | TypeScript | MongoDB | <span className="bg-gray-200 Building-Solutions px-1">Building Solutions</span> | Open for collaborations. ❤
-                    </p>
+
+                    <Dialog>
+                        <div className="mt-3 mb-4 text-muted-foreground roboto">
+                            A FullStack Developer | React | JavaScript | NodeJs/Express | Tailwindcss | NextJs | TypeScript | MongoDB |
+                            <DialogTrigger asChild>
+                                <span className="cursor-pointer dark:text-blue-400 text-blue-400 px-1 ml-1">
+                                    Building Solutions
+                                </span>
+                            </DialogTrigger> | Open for collaborations. ❤
+                        </div>
+
+                        {/* Now the Dialog Pop-Up is here */}
+                        <DialogContent className="mx-auto roboto p-14 rounded-md ">
+                            <DialogHeader className="flex flex-col justify-center items-center">
+                                <DialogTitle className="text-center mb-5">Work in Progress</DialogTitle>
+                                <DialogDescription className="grid grid-col-1 gap-2">
+                                    <span className="w-full h-32 bg-black text-white dark:text-black dark:bg-white shadow-xl py-10 px-20 flex justify-center items-center rounded-lg">
+                                        We&#39;re working hard to bring you a new JavaSript learning platform. Stay tuned for launch details!
+                                    </span>
+                                </DialogDescription>
+                            </DialogHeader>
+                        </DialogContent>
+                    </Dialog>
 
                     <p className="text-sm text-muted-foreground">I&#39;m currently building my ideas.</p>
                     <p className="text-sm text-muted-foreground mb-4">Ask me about JavaScript, React, NextJs, NodeJs, Css...and more</p>
@@ -52,31 +71,16 @@ export default function Intro() {
                         <div className="bg-gray-200 dark:bg-gray-200 transition-all hover:scale-125 text-white rounded-md p-1"><SiTypescript className="text-3xl rounded-md" id="typescript" /></div>
                         <div className="bg-gray-200 dark:bg-gray-200 transition-all hover:scale-125 text-white rounded-md p-1"><SiNodedotjs className="text-3xl" id="Nodejs" /></div>
                         <div className="bg-gray-200 dark:bg-gray-200 transition-all hover:scale-125 text-white rounded-md p-1"><SiExpress className="text-3xl" id="Express" /></div>
+                        <div className="bg-gray-200 dark:bg-gray-200 transition-all hover:scale-125 text-white rounded-md p-1"><FaDatabase className="text-3xl" id="Express" /></div>
                         <div className="bg-gray-200 dark:bg-gray-200 transition-all hover:scale-125 text-white rounded-md p-1"><SiJquery className="text-3xl" id="Jquery" /></div>
-                        <div className="bg-gray-200 dark:bg-gray-200 transition-all hover:scale-125 text-white rounded-md p-1"><SiNextdotjs className="text-3xl" id="Nextjs" /></div>
-                        <div className="bg-gray-200 dark:bg-gray-200 transition-all hover:scale-125 text-white rounded-md p-1"><SiHtml5 className="text-3xl" id="Html" /></div>
                     </div>
-
-                    <section className="mt-7 flex justify-center items-center">
-                        <Dialog>
-                            <DialogTrigger asChild>
-                                <button className="bg-gray-200 px-5 text-xs py-2 rounded-full dark:bg-gray-900 dark:border transform transition-all text-gray-700 dark:text-gray-200  cursor-pointer">Achievement</button>
-                            </DialogTrigger>
-
-                            {/* Now the Dialog Pop-Up is here */}
-                            <DialogContent className="mx-auto roboto p-14 rounded-md ">
-                                <DialogHeader className="flex flex-col justify-center items-center">
-                                    <DialogTitle className="text-center mb-10">Achievements</DialogTitle>
-                                    <DialogDescription className="flex flex-col justify-start items-start">
-                                        <section className="grid grid-col-1 grid-cols-2 gap-2">
-                                            <section className="w-10 h-10 bg-black dark:bg-white dark:text-black shadow-xl py-10 px-20 flex justify-center items-center rounded-lg">Hello</section>
-                                            <section className="w-10 h-10 bg-black dark:bg-white dark:text-black shadow-xl py-10 px-20 flex justify-center items-center rounded-lg">Hello</section>
-                                        </section>
-                                    </DialogDescription>
-                                </DialogHeader>
-                            </DialogContent>
-                        </Dialog>
-                    </section>
+                    <div className="mt-2 gap-2 flex items-center">
+                        <div className="bg-gray-200 dark:bg-gray-200 transition-all hover:scale-125 text-white rounded-md p-1"><SiNextdotjs className="text-3xl" id="Nextjs" /></div>
+                        <div className="bg-gray-200 dark:bg-gray-200 transition-all hover:scale-125 text-white rounded-md p-1"><FaRobot className="text-3xl" id="Nextjs" /></div>
+                        <div className="bg-gray-200 dark:bg-gray-200 transition-all hover:scale-125 text-white rounded-md p-1"><SiHtml5 className="text-3xl" id="Html" /></div>
+                        <div className="bg-gray-200 dark:bg-gray-200 transition-all hover:scale-125 text-white rounded-md p-1"><SiDocker className="text-3xl" id="Html" /></div>
+                        <div className="bg-gray-200 dark:bg-gray-200 transition-all hover:scale-125 text-white rounded-md p-1"><SiJest className="text-3xl" id="Html" /></div>
+                    </div>
 
                     <div className="flex gap-3 mt-8">
                         {navigation.map(item => (
@@ -111,7 +115,7 @@ export default function Intro() {
                                 <FaHeart className="animate-ping" />
                             </HoverCardTrigger>
                             <HoverCardContent className="w-24 text-sm">
-                                Avaliable
+                                I&#39;m Avaliable
                             </HoverCardContent>
                         </HoverCard>
                     </span>
