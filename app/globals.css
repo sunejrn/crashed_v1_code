@@ -146,7 +146,8 @@
 
 .ImageBackround {
   background-color: blueviolet;
-  background-image: url("../../portfolio/public/Images/projects/Typing-game.jpg");
+  /* background-image: url("../../portfolio/public/Images/projects/Typing-game.jpg"); */
+  background-image: url('/Images/projects/Typing-game.jpg');
   background-size: cover;
   background-position: center;
 }
