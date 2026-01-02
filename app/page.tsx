@@ -4,6 +4,7 @@ import RecentPosts from "@/components/recent-posts";
 import RecentProjects from "@/components/recent-project";
 
 export default async function Home() {
+  // Home is safe
 
   return (
     <section className="py-24 ">
