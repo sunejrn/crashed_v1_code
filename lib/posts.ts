@@ -46,8 +46,9 @@ export async function getPosts(limit?: number): Promise<PostMetadata[]> {
 
     if (limit) {
         return sortedPosts.slice(0, limit)
-        // set limit
     }
+
+    // set limit removed actually
     return sortedPosts
 }
 

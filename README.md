@@ -1,4 +1,4 @@
 # Kara sune
 ### remains privately, old portfolio
 
-used Typescript, javascript, and CSS3.
+used Typescript, javascript, MDX, and CSS3
